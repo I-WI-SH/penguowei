@@ -19,7 +19,7 @@ git下载地址：[https://git-scm.com/download/win/](https://git-scm.com/downlo
 git init
 ```
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619133627763.png" alt="image-20230619133627763" style="zoom:80%;" />
+<img src="图片/image-20230619133627763.png" alt="image-20230619133627763" style="zoom:80%;" />
 
 ### 提交文件
 
@@ -31,14 +31,14 @@ git add README.md
 git commit -m ''
 ```
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619134634240.png" alt="image-20230619134634240" style="zoom:80%;" />
+<img src="图片/image-20230619134634240.png" alt="image-20230619134634240" style="zoom:80%;" />
 
 ```bash
 # 查看仓库中的文件状态
 git status
 ```
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619134820360.png" alt="image-20230619134820360" style="zoom:80%;" />
+<img src="图片/image-20230619134820360.png" alt="image-20230619134820360" style="zoom:80%;" />
 
 没有暂存的文件未commit到仓库，但是有文件没有添加到仓库中
 
@@ -47,7 +47,7 @@ git status
 git diff RAEDME.md
 ```
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619135248835.png" alt="image-20230619135248835" style="zoom:80%;" />
+<img src="图片/image-20230619135248835.png" alt="image-20230619135248835" style="zoom:80%;" />
 
 ### 回退版本
 
@@ -56,14 +56,14 @@ git diff RAEDME.md
 git log
 ```
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619135946963.png" alt="image-20230619135946963" style="zoom:80%;" />
+<img src="图片/image-20230619135946963.png" alt="image-20230619135946963" style="zoom:80%;" />
 
 ```bash
 # 简化显示
 git log --pretty=oneline
 ```
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619140158260.png" alt="image-20230619140158260" style="zoom:80%;" />
+<img src="图片/image-20230619140158260.png" alt="image-20230619140158260" style="zoom:80%;" />
 
 ```bash
 # 回退版本
@@ -72,7 +72,7 @@ git reset --hard HEAD^^
 git reset --hard HEAD~100
 ```
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619140454103.png" alt="image-20230619140454103" style="zoom:80%;" />
+<img src="图片/image-20230619140454103.png" alt="image-20230619140454103" style="zoom:80%;" />
 
 
 
@@ -83,7 +83,7 @@ cat README.md
 
 此时查看提交的日志log，发现只有上上版本的提交记录了。
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619140541693.png" alt="image-20230619140541693" style="zoom:80%;" />
+<img src="图片/image-20230619140541693.png" alt="image-20230619140541693" style="zoom:80%;" />
 
 如果要回退到之前的修改版本，则需要修改版本的版本号，使用reflog命令
 
@@ -92,7 +92,7 @@ git reflog
 git reset --hard 44dd381
 ```
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619141141776.png" alt="image-20230619141141776" style="zoom:80%;" />
+<img src="图片/image-20230619141141776.png" alt="image-20230619141141776" style="zoom:80%;" />
 
 ### 撤销修改
 
@@ -133,9 +133,9 @@ git remote add origin https://github.com/I-WI-SH/penguowei.git
 git push -u origin master
 ```
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619144612276.png" alt="image-20230619144612276" style="zoom:80%;" />
+<img src="图片/image-20230619144612276.png" alt="image-20230619144612276" style="zoom:80%;" />
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619144626937.png" alt="image-20230619144626937" style="zoom:80%;" />
+<img src="图片/image-20230619144626937.png" alt="image-20230619144626937" style="zoom:80%;" />
 
 ```bash
 # clone远程仓库
@@ -154,7 +154,7 @@ git checkout -b dev
 git branch
 ```
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619150648002.png" alt="image-20230619150648002" style="zoom:80%;" />
+<img src="图片/image-20230619150648002.png" alt="image-20230619150648002" style="zoom:80%;" />
 
 在dev分支做出的修改commit到仓库后，切换到master分支后，master分支下的内容不会变；如果要使master分支下的内容和dev分支下的内容一样，则要将分支进行合并
 
@@ -168,19 +168,19 @@ git merge dev
 git branch -d dev
 ```
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619152309277.png" alt="image-20230619152309277" style="zoom:80%;" />
+<img src="图片/image-20230619152309277.png" alt="image-20230619152309277" style="zoom:80%;" />
 
 当在不同分支下，对文件中的同一位置做了修改后，在合并分支时会发生冲突
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619153242992.png" alt="image-20230619153242992" style="zoom:80%;" />
+<img src="图片/image-20230619153242992.png" alt="image-20230619153242992" style="zoom:80%;" />
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619153325368.png" alt="image-20230619153325368" style="zoom:80%;" />
+<img src="图片/image-20230619153325368.png" alt="image-20230619153325368" style="zoom:80%;" />
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619153435363.png" alt="image-20230619153435363" style="zoom:80%;" />
+<img src="图片/image-20230619153435363.png" alt="image-20230619153435363" style="zoom:80%;" />
 
 确认修改冲突内容后，重新commit
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619154052363.png" alt="image-20230619154052363" style="zoom:80%;" />
+<img src="图片/image-20230619154052363.png" alt="image-20230619154052363" style="zoom:80%;" />
 
 ```bash
 git merge -no-off -m 'commit_info' dev
@@ -196,7 +196,7 @@ git merge -no-off -m 'commit_info' dev
 git stash
 ```
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619155502899.png" alt="image-20230619155502899" style="zoom:80%;" />
+<img src="图片/image-20230619155502899.png" alt="image-20230619155502899" style="zoom:80%;" />
 
 工作区保存的位置为最近一次commit
 
@@ -216,7 +216,7 @@ git remote
 git remote -v
 ```
 
-<img src="C:\Users\39091\Desktop\penguowei\week1\git工具使用笔记\图片\image-20230619155838171.png" alt="image-20230619155838171" style="zoom:80%;" />
+<img src="图片/image-20230619155838171.png" alt="image-20230619155838171" style="zoom:80%;" />
 
 ```bash
 # 推
