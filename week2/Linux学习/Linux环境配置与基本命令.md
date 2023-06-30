@@ -26,7 +26,7 @@ WSL（Windows Subsystem for Linux）是一个在Windows 10/11上能够运行原�
    dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
    ```
 
-   <img src="../李宏毅视频笔记/图片/image-20230630181531363.png" alt="image-20230630181531363" style="zoom:67%;" />
+   <img src="图片/image-20230630181531363.png" alt="image-20230630181531363" style="zoom:67%;" />
 
    设置完成后，重启笔记本
 
@@ -42,9 +42,9 @@ WSL（Windows Subsystem for Linux）是一个在Windows 10/11上能够运行原�
    wsl --version
    ```
 
-   <img src="../李宏毅视频笔记/图片/image-20230630182114828.png" alt="image-20230630182114828" style="zoom:80%;" />
+   <img src="图片/image-20230630182114828.png" alt="image-20230630182114828" style="zoom:80%;" />
 
-   <img src="../李宏毅视频笔记/图片/image-20230630182658845.png" alt="image-20230630182658845" style="zoom: 80%;" />
+   <img src="图片/image-20230630182658845.png" alt="image-20230630182658845" style="zoom: 80%;" />
 
 4. 一些常用的wsl命令
 
@@ -66,9 +66,9 @@ WSL（Windows Subsystem for Linux）是一个在Windows 10/11上能够运行原�
 
    在Microsoft Store中搜索Linux，下载安装Ubuntu20.04 or 官网下载https://learn.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions（Microsoft Store默认安装在C盘）
 
-   <img src="../李宏毅视频笔记/图片/image-20230630185621699.png" alt="image-20230630185621699" style="zoom:80%;" />
+   <img src="图片/image-20230630185621699.png" alt="image-20230630185621699" style="zoom:80%;" />
 
-   <img src="../李宏毅视频笔记/图片/image-20230630190753263.png" alt="image-20230630190753263" style="zoom: 50%;" />
+   <img src="图片/image-20230630190753263.png" alt="image-20230630190753263" style="zoom: 50%;" />
 
 # 三. Linux基本命令
 
@@ -147,7 +147,7 @@ penguowei@DESKTOP-D7A8QB9:~$ ls -l
 | -S   |                    | 命令输出结果按照文件大小排序                                 |
 | -t   |                    | 按照修改时间排序                                             |
 
-<img src="../李宏毅视频笔记/图片/image-20230630205828735.png" alt="image-20230630205828735" style="zoom:80%;" />
+<img src="图片/image-20230630205828735.png" alt="image-20230630205828735" style="zoom:80%;" />
 
 | 字段         | 含义                                                         |
 | :----------- | :----------------------------------------------------------- |
@@ -166,7 +166,7 @@ penguowei@DESKTOP-D7A8QB9:~$ ls -l
 penguowei@DESKTOP-D7A8QB9:~$ file filename 
 ```
 
-<img src="../李宏毅视频笔记/图片/image-20230630210453457.png" alt="image-20230630210453457" style="zoom:80%;" />
+
 
 ### d. less命令-查看文件
 
