@@ -208,6 +208,9 @@ penguowei@DESKTOP-D7A8QB9:~$ mv saber2.jpg saber3.jpg
 ```bash
 # rm 删除文件或目录
 penguowei@DESKTOP-D7A8QB9:~$ rm saber3.jpg
+
+# 删除目录
+rm -r 
 ```
 
 ```bash
@@ -326,6 +329,9 @@ ESC
 ：q  # 保存后退出
 ：q！ # 不做出修改依旧要退出
 ：wq # 写入退出两个命令可以合并
+
+# 查找
+/char 
 
 ```
 
